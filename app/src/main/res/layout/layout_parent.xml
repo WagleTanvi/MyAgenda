@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:focusable="false"
+        android:text="Add"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_alignBottom="@+id/et_parent"
+        android:layout_toRightOf="@+id/et_parent"
+        android:layout_toEndOf="@+id/et_parent" />
+
+    <EditText
+        android:id="@+id/et_parent"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="55dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+        android:text="Name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/remove"
+        android:layout_alignBottom="@+id/button_add"
+        android:layout_toRightOf="@+id/button_add"
+        android:layout_toEndOf="@+id/button_add"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp" />
+
+</RelativeLayout>
